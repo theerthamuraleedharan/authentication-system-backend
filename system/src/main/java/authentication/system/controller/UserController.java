@@ -1,10 +1,10 @@
 package authentication.system.controller;
 
+import authentication.system.dto.RegisterRequest;
+import authentication.system.dto.RegisterResponse;
 import authentication.system.entity.AppUser;
 import authentication.system.services.UsersService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,4 +22,5 @@ public class UserController {
     public List<AppUser> getAllUsers() {
         return userService.getAllUsers();
     }
+
 }
